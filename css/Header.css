@@ -1,0 +1,87 @@
+/* Style for the fixed navbar */
+.navbar 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px;
+    z-index: 9999;
+}
+
+/* Style for the logo */
+.navbar .logo 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+    width: 100%;
+}
+
+/* Style for the navigation links */
+.navbar ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    align-items: center;
+    background-color: rgba(239, 239, 239, 0.729);
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+}
+
+
+.navbar ul li 
+{
+    display: inline-block;
+    margin: 7px;
+}
+
+.navbar ul li a 
+{
+    color: #141414;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.avatar
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.login-signup 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn-group button 
+{
+    background-color: #1e202d78; /* Green background */
+    border: 1px solid rgba(0, 0, 0, 0.293); /* Green border */
+    color: white; /* White text */
+    padding: 10px 54px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    font-size: small;
+}
+
+.btn-group button:not(:last-child) 
+{
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover 
+{
+    background-color: #4281e0b3;
+}

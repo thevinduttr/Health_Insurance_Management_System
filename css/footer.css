@@ -1,0 +1,79 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+table {
+    width: 100%;
+}
+
+.footer-logo {
+    vertical-align: top right;
+    padding-right: 10px;
+    width: 25%;
+}
+
+
+.footer-address {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.footer-icon {
+    margin-right: 5px;
+}
+
+.footer-links {
+    text-align: center;
+    width: 30%;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* newsteller  */
+.newsform {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+  }
+  
+  .newscontainer {
+    padding: 2px;
+    background-color: #f1f1f1;
+  }
+  
+  input[type=email], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+/* newsteller end */
+

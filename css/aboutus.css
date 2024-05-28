@@ -1,0 +1,217 @@
+body{
+	  font-family: Arial, sans-serif;
+	  margin: 0;
+      padding: 0;
+	   background-size: cover;
+      background-color:#e1edfa;
+}
+.about{
+  display:flex;
+
+}
+/*css for slides and content*/
+.centerContent {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+   margin-top: 50px;
+}
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide .slide-image {
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 150px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding:10px;
+  margin-left:50px;
+  margin-right:50px;
+  
+}
+
+.slide .content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align:center;
+  
+}
+
+.slide .content p {
+  font-size: 16px;
+}
+.content menu {
+  font-size: 16px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+/*vertical line*/
+.vertical-line {
+  border: 1px solid #333;
+  width: 0px;
+  height: 40%;
+  background-color: black;
+  margin: auto;
+  position: absolute;
+  top:840px;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}	
+
+/*strengths box*/
+.box {
+  position: absolute;
+  top: 700px; /* Adjust the vertical position */
+  left: 110px; /* Adjust the horizontal position */
+  bottom: 0;
+  padding: 0px;
+  border: none;
+  width: 35%;
+  height: 40%;
+  border-radius: 50px;
+  background-color: rgba(87, 94, 68, 0.6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.director {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 650px; /* Adjust the margin-top value as needed */
+  margin-right: 310px; /* Adjust the margin-right value as needed */
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the spacing between images */
+  justify-content: flex-end; /* Align the images to the right */
+  position: absolute;
+  top:700px;
+  bottom: 0px;
+  right: 0;
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.image-container .image {
+  flex: 0 0 calc(33.33% - 10px); /* Adjust the width of each image container for three images in the first row */
+}
+
+.image-container .image:nth-child(n+4) {
+  flex: 0 0 calc(50% - 60px); /* Adjust the width of each image container for two images in the second row */
+}
+  
+.image img {
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+ .foot{
+	  margin-top: 410px;
+ }

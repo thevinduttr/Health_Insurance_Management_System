@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+   background-image: url('../img/complaint.jpeg');
+  background-repeat: repeat; /* Repeat the background image vertically and horizontally */
+  background-size: cover; /* Scale the background image to cover the form */
+}
+
+h1 {
+    text-align: center;
+	 margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.4); /* Add a background color */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+	  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+    background-color: #284885;
+    color: #fff;
+}
+
+form button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
